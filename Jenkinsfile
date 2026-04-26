@@ -18,7 +18,7 @@ pipeline {
         stage('Build') {
             steps {
                 bat 'echo Building application...'
-                bat 'py -m pip install -r requirements.txt'
+                bat 'echo Dependencies will be installed inside Docker container'
             }
         }
 
